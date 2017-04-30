@@ -22,7 +22,7 @@ import { FlightListResolver } from './flight-list-resolver.service';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-function deactivateErrorPage(){	return false;}
+export function deactivateErrorPage(){	return false;}
 
 function deactivateErrorPage1(component :ErrorComponent)
 { if(component.resetApp) 
