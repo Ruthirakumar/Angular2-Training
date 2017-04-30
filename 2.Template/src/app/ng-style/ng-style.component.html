@@ -1,0 +1,6 @@
+<p>
+  ng-style works!
+</p>
+<div [style.color]="isDanger ? 'red' : 'green' ">Danger1 Zone </div>
+<div [ngStyle]="{color : isDanger ? 'red' : 'color' }">Danger2 Zone </div>
+<div [ngStyle]="getStyle()">Danger3 Zone </div>

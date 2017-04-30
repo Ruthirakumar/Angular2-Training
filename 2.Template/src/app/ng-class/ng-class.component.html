@@ -1,0 +1,7 @@
+<p>
+  ng-class works!
+</p>
+<div [class.danger]="isDanger">Danger1 Zone </div>
+<div [ngClass]="{danger : isDanger == true }">Danger2 Zone </div>
+<div [ngClass]="getClass()">Danger3 Zone </div>
+<div [ngClass]="getClass1()">Danger3 Zone </div>

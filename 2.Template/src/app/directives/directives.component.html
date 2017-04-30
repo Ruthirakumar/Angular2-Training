@@ -1,0 +1,8 @@
+<p>
+  directives works!
+</p>
+<div *ngFor="let flight of flightList">
+	Name: {{flight.name}} 
+	<span [hidden]="!flight.classType">Type:{{flight.classType}}</span>
+	<span *ngIf="flight.status"> Status: {{flight.status}}</span>
+</div>
