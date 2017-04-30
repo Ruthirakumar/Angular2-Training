@@ -1,0 +1,5 @@
+<p>
+  hotels works!
+</p>
+<div *ngFor="let hotel of hotels">
+Name: <a [routerLink]="['/hotel', hotel.name]" >{{hotel.name}}</a> ; city : {{hotel.city}}</div>
