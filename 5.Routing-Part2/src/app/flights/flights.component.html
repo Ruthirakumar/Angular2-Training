@@ -1,0 +1,7 @@
+<p>  flights Observable Type works!</p>
+<div  *ngFor="let flight of flights">
+<a [routerLink]="['/flight', flight.id]" >Name: {{flight.name}} </a></div>
+<a [routerLink]="['/flightListResolver']">Name:Flight List (Resolver Type)</a>
+
+
+

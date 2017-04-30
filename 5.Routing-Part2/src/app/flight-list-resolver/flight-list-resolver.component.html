@@ -1,0 +1,5 @@
+<p>
+  flight-list-resolver works!
+</p>
+<div  *ngFor="let flight of flightList">
+<a [routerLink]="['/flight', flight.id]" >Name: {{flight.name}} </a></div>
