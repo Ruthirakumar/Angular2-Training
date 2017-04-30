@@ -1,0 +1,3 @@
+<p>  flights works!</p>
+<div  *ngFor="let flight of flights">
+<a [routerLink]="['/flight', flight.id]" >Name: {{flight.name}} </a></div>

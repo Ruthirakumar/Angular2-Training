@@ -1,0 +1,2 @@
+[0418/091209.011:ERROR:exception_snapshot_win.cc(87)] thread ID 4928 not found in process
+[0418/091209.013:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
