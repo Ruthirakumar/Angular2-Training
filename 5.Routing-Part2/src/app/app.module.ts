@@ -24,7 +24,7 @@ import { FlightListResolver } from './flight-list-resolver.service';
 export class AppModule { }
 export function deactivateErrorPage(){	return false;}
 
-function deactivateErrorPage1(component :ErrorComponent)
+export function deactivateErrorPage1(component :ErrorComponent)
 { if(component.resetApp) 
 	{return window.confirm("Are you sure want to reset App ?");	}
   return true;
