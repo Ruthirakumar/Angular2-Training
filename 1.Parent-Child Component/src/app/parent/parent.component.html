@@ -1,0 +1,12 @@
+Parent Component:
+<button (click)="childComp.displayNumber()">Trigger Child Comp Method 
+</button>
+
+<child [flight]="flightDetail" #childComp
+ (alertStatus)="diplayCurrentStatus($event)"></child>
+
+ {{childComp.name}}
+
+
+
+
