@@ -1,0 +1,6 @@
+<div *ngFor="let course of visibleCourses">
+<label>Technology : </label>  {{course.technology | uppercase}} <br>
+<label>Fees : </label> {{course.fees | currency : 'USD' :true}} <br>
+<label>Start Date : </label>{{course.startDate | date : 'y-M-d'}} <br>
+<label>Mode : </label> {{course.mode | timing}} <hr>
+</div>

@@ -1,0 +1,5 @@
+<button (click)="filterByValue=''">Clear Filter</button>
+<button (click)="filterByValue='Online'">Online Only</button>
+<button (click)="sortByValue='feesAsc'">Sort By Fees(Asc)</button>
+<button (click)="sortByValue='feesDesc'">Sort By Fees(Desc)</button>
+<training [courses]="courses" [filterBy]="filterByValue" [sortBy]="sortByValue"></training>
