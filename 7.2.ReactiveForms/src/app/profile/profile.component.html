@@ -1,0 +1,14 @@
+<form [formGroup]="profileForm" (ngSubmit)="saveProfile(profileForm.value)">
+<label>First Name:</label>
+<input formControlName="firstName"><br>
+
+<label>Last Name</label>
+<input formControlName="lastName">
+<em *ngIf="lastName.errors?.restrictedWords">{{lastName.errors?.restrictedWords}}</em>
+
+<em *ngIf="!validateLastName()">
+<span *ngIf="profileForm.controls.lastName.errors.required">Required</span>
+<span *ngIf="profileForm.controls.lastName.errors.pattern">Value is invalid</span></em>
+
+<button type="submit">Update</button>
+</form>

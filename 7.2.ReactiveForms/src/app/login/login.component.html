@@ -1,0 +1,24 @@
+<form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)" noValidate>
+<label>User Name:</label><em *ngIf="loginForm.controls.userName?.invalid && loginForm.controls.userName?.touched">Required</em>
+<input (ngModel)="userName" name="userName" required>
+<br><label>Password</label><em *ngIf="loginForm.controls.password?.invalid && (loginForm.controls.password?.touched || mouseOverLogin)">Required</em>
+<input type="password" (ngModel)="password" name="password" required>
+
+<div (mouseenter)="mouseOverLogin=true" (mouseleave)="mouseOverLogin=false"><button [disabled]="loginForm.invalid" type="submit">Login</button></div>
+<button type="button">Cancel</button>
+<br><b>Form Validation:<br></b>
+<label>loginform.valid :</label><b>{{loginForm.valid}}</b>
+<label>loginForm.inValid :</label><b>{{loginForm.invalid}}</b>
+<label>loginform.dirty :</label><b>{{loginForm.dirty}}</b>
+<label>loginForm.pristine :</label><b>{{loginForm.pristine}}</b><br>
+<label>loginform.submitted :</label><b>{{loginForm.submitted}}</b>
+<label>loginForm.touched :</label><b>{{loginForm.touched}}</b>
+<label>loginform.untouched :</label><b>{{loginForm.untouched}}</b>
+<b><br>Control Validation:<br></b>
+<label>loginForm.controls.userName.valid : </label><b>{{loginForm.controls.userName?.valid}}</b>
+<label>loginForm.controls.userName.invalid : </label><b>{{loginForm.controls.userName?.invalid}}</b><br>
+<label>loginForm.controls.userName.dirty : </label><b>{{loginForm.controls.userName?.dirty}}</b>
+<label>loginForm.controls.userName.pristine : </label><b>{{loginForm.controls.userName?.pristine}}</b><br>
+<label>loginForm.controls.userName.touched : </label><b>{{loginForm.controls.userName?.touched}}</b>
+<label>loginForm.controls.userName.untouched : </label><b>{{loginForm.controls.userName?.untouched}}</b>
+</form>

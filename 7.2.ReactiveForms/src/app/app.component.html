@@ -1,0 +1,4 @@
+<a *ngIf="!loginService.isAuthenticated" [routerLink]="['/login']">Login</a>
+<div *ngIf="loginService.isAuthenticated"><label>Welcome : </label>{{loginService.user?.name}}</div>
+<router-outlet></router-outlet>
+
