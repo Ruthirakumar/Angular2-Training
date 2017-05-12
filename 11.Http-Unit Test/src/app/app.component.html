@@ -1,0 +1,8 @@
+<h1>{{title}}<h1>
+<button (click)="getCall()">Get Call</button>
+<button (click)="postCall()">Post Call</button>
+<div *ngFor="let customer of  customerList?.records">
+	<label>Name : </label> <b>{{customer.Name}} </b>
+	<label>City : </label> <b>{{customer.City}}</b>
+	<label>Country : </label> <b> {{customer.Country}}</b><br>
+</div>
